@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="460dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/outfit_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/titulo"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:baselineAligned="false"
+        android:fontFamily="@font/outfit"
+        android:gravity="center"
+        android:text="Ao adotar um animal de estimação voçê torna a VIDA dele mais feliz novamente "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.544"
+        tools:ignore="HardcodedText,UnknownId" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_segunda_tela"
+        android:layout_width="402dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/background_button"
+        android:baselineAligned="false"
+        android:onClick="teladois"
+        android:padding="15dp"
+        android:text="Vamos"
+        android:textColor="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,OnClick,VisualLintButtonSize" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
